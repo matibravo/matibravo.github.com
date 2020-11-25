@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="es">
+ <head>
+ 	  <meta charset="uft-8">
+ 	  <link rel="stylesheet" href="css/bootstrap.css">
+ 	  <title>Amasanderia Where Chadi</title> 
+ </head>
+   
+ <body> 	
+ 		<header>
+ 	         <nav class="navbar navbar-default" role="navigation">
+               <div class="container-fluid">                
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+               <a href="inicio.html"><img src="imagenes/logo.png" class="img-rounded"></a>
+               </div>  
+               <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="navbar-header navbar-right">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>               
+               <a class="navbar-brand" href="index.html">Inicio</a>
+               <a class="navbar-brand" href="productos.html">Productos</a>
+               <a class="navbar-brand" href="servicios.html">Servicios</a>
+               <a class="navbar-brand" href="contactos.html">Contactos</a>
+              </div>      
+              </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav> 
+    </header>
+    <br> 
+    <section>
+      <h2 class="container">Ubicanos aqu&iacute;:</h2>
+      <br>
+      <hr>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3332.6693552330457!2d-70.7448228!3d-33.353587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c0eb36e8bbe9%3A0x5c9c3be053a63b2d!2sEstaci%C3%B3n+Montenegro+864%2C+Quilicura%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1417715116150" width="100%" height="600" frameborder="0" style="border:0"></iframe>
+      <hr>
+    </section>  
+    <br>  
+    <article class="container">  
+    <div class="row">
+       <div class="col-md-8">      
+            <h2>Formulario de Contacto</h2>
+       <br> 
+       <form action="contacto.php" method="post" class="form-horizontal" rol="form" name="frmcontacto"> 
+        <div class="form-group">       
+            <label for="nombre" class="col-sm-2 control-label">Nombre:</label>
+            <div class="col-sm-6">                 
+            <input  type="text" id="nombre" name="nombre" required placeholder="Nombre" /> 
+        </div> 
+        </div>
+        <div class="form-group">              
+            <label for="correo" class="col-sm-2 control-label">Email:</label>
+            <div class="col-sm-6">                
+            <input type="email" id="correo" name="email" required placeholder="Email" />           
+        </div>
+        </div>
+        <div class="form-group">     
+            <label  for="telefono" class="col-sm-2 control-label">Telefono:</label> 
+            <div class="col-sm-6">                 
+            <input type="number" id="telefono" name="telefono" placeholder="Telefono" />
+        </div>    
+        </div>
+        <div class="form-group">    
+            <label for="ccc" class="col-sm-2 control-label">Comentarios:</label> 
+            <div class="col-sm-6">                
+            <textarea id="ccc" name="comentarios" rows="8" cols="50" required placeholder="Dejanos tus comentarios"></textarea> 
+        </div>
+        </div>
+        <p>
+          <input type="submit"  class="btn btn-primary btn-lg " name="button"  id="button" value="Enviar" >
+        </p>     
+       </form> 
+       </div>  
+       <br>  
+       <h3>Siguenos en nuestras redes sociales:</h3> 
+       <br>   
+       <div class="col-md-2">  
+
+          <a href="https://plus.google.com/114531349393250638985" target="_blank"><img src="imagenes/google-plus-icon.png"  class="img-circle" with="140px" height="140px"/> </a> 
+          <a href="https://es-la.facebook.com/" target="_blank"><img src="imagenes/face1.png"  class="img-circle" with="140px" height="140px"/> </a> 
+           </div> 
+           <div class="col-md-2">
+          <a href="https://es.pinterest.com/" target="_blank"><img src="imagenes/pinte.png"  class="img-circle" with="140px" height="140px"/> </a> 
+          <a href="https://twitter.com/?lang=es" target="_blank"><img src="imagenes/twiter.png"  class="img-circle" with="140px" height="140px"/> </a>           
+        </div>       
+       </div><!--cierre row-->
+   </article> 
+    </br></br>
+   <footer class="container-fluid">
+          <p class="pie"> Nos econtramos ubicados en pasaje Estaci&oacute;n Montenegro # 864, Quilicura, RM</p>
+          <p class="pie"> Nuestro telefono es (2) 9987316 </p>
+          <a href="http://cl.linkedin.com/pub/matias-bravo-castro/6a/3a3/98a" target="_blank"><p class="pie">Web desarrollada por MatiBravo</p></a>
+   </footer>
+ </body>
+</html>

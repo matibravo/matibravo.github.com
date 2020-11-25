@@ -1,0 +1,19 @@
+
+	
+/*probando*/
+
+.navbar-header .navbar-brand {
+color: white;
+}	
+
+.container-fluid {
+background-color: maroon;
+}
+
+h1 {
+	font-family: sans-serif, arial, helvetica;
+	color: maroon;
+	font-weight: bolder;
+	font-size: 5 em;
+}
+
