@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'PT Sans Narrow', sans-serif;
+    box-sizing: border-box;
+}
+
+header{    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+footer{    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 10vh;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+        
+}
+
+footer a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: 1px dashed #ccc;
+    
+}
+
+table{
+    width: 100%;
+    border-spacing: 0; /*es el espacio q se forma entre las celdas*/
+        
+}
+
+table tr,td{
+    margin: 15px;
+    padding: 15px;   
+    border: 1px solid #ccc;
+}
+
+.filaTitle{
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+label{
+    display: inline-block;
+    font-size: 1.8em;
+    padding: 10px 10px 10px 0px;
+    margin: 10px;
+
+}
+
+input, textarea{
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;  /*permite expandir hacia abajo y no hacia los lados*/
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100vh;
+}
+
+.form{
+    grid-column: 2 / 6;
+}
+
+.listas{
+    grid-column: 7 / 12;
+    overflow-y: scroll;
+}
+
+table .btn_eliminar{
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    height: 40%;
+    text-decoration: none;
+}
+
+table .btn_eliminar:hover{
+    border-radius: 4px;
+    border: 2px dashed darkred;
+}
+
+@media (max-width: 450px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);        
+    }
+
+    .form{
+        grid-column: 2 / 6;
+    }
+    
+    .listas{
+        grid-column: 2 / 7;
+    }
+
+    
+
+}
